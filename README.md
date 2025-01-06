@@ -1,16 +1,18 @@
-### SYNCHRONOUS-UP-COUNTER
+## NAME: KATHIRESH M
+## REG NO:24901022
+## EXPERIMENT 7:  SYNCHRONOUS-UP-COUNTER
 
-**AIM:**
+*AIM:*
 
 To implement 4 bit synchronous up counter and validate functionality.
 
-**SOFTWARE REQUIRED:**
+*SOFTWARE REQUIRED:*
 
 Quartus prime
 
-**THEORY**
+*THEORY*
 
-**4 bit synchronous UP Counter**
+*4 bit synchronous UP Counter*
 
 If we enable each J-K flip-flop to toggle based on whether or not all preceding flip-flop outputs (Q) are “high,” we can obtain the same counting sequence as the asynchronous circuit without the ripple effect, since each flip-flop in this circuit will be clocked at exactly the same time:
 
@@ -26,21 +28,24 @@ Since the first (LSB) flip-flop needs to toggle at every clock pulse, its J and 
 The next flip-flop need only “recognize” that the first flip-flop’s Q output is high to be made ready to toggle, so no AND gate is needed.
 However, the remaining flip-flops should be made ready to toggle only when all lower-order output bits are “high,” thus the need for AND gates.
 
-**Procedure**
+*Procedure*
+1. Initialize the shift register to a known state (e.g., all zeros).
+2. Input a bit serially into the shift register.
+3. Shift the contents of the register one position to the right (or left).
+4. Output the shifted bit from the last stage of the register.
+5. Repeat steps 2-4 for each bit you want to input and shift.
 
-/* write all the steps invloved */
 
-**PROGRAM**
+*PROGRAM*
 
-/* Program for flipflops and verify its truth table in quartus using Verilog programming. 
+![Screenshot 2025-01-04 143333](https://github.com/user-attachments/assets/ec4a9b59-d881-44e6-8b4c-7c68f7b854b6)
 
-Developed by: RegisterNumber:
-*/
 
-**RTL LOGIC UP COUNTER**
 
-**TIMING DIAGRAM FOR IP COUNTER**
 
-**TRUTH TABLE**
+*RTL LOGIC UP COUNTER*
+![Screenshot 2025-01-04 143402](https://github.com/user-attachments/assets/d0751649-6c92-44e4-9b58-73253c1280fd)
 
-**RESULTS**
+
+*TIMING DIAGRAM FOR IP COUNTER*
+![Screenshot 2025-01-04 143430](https://github.com/user-attachments/assets/0826caff-c062-44a8-a35b-c8b91456c84e)
